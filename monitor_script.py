@@ -6,8 +6,6 @@ from login_config import *
 from resnet_login import run_login
 
 
-exe_freq = 30 #in minute
-
 try:
     while True:
         return_status = run_login(username, password)
@@ -26,8 +24,8 @@ try:
         elif return_status == -1:
             print("Request ERROR")
 
-        print("Start sleep for: "+str(exe_freq)+" min")
-        time.sleep(exe_freq*60)
+        print("Start sleep for: "+str(login_freq )+" min")
+        time.sleep(login_freq *60)
 except KeyboardInterrupt:
     print('Stop process by user')
 
