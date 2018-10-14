@@ -1,4 +1,4 @@
-# ResNet-auto-login
+# CUHK ResNet Login Bot
 
 ## Introuduction
 This python script provide simple login script to the ResNet portal.
@@ -19,3 +19,5 @@ You can install a systemd daemon named resnet_login.service to the system. The d
 ```
 
 
+## Reference
+https://github.com/SaneBow/ResNetAutoLogin
