@@ -1,0 +1,13 @@
+[Unit]
+Description=ResNet login Service
+Wants=network.target
+After=network.target
+
+[Service]
+User=pi
+WorkingDirectory=/opt/resnet_login
+ExecStart=/opt/resnet_login/monitor_script.py
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target
