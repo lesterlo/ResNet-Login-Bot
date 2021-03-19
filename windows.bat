@@ -1,0 +1,1 @@
+python %~dp0\resnet_login.py
