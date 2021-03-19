@@ -1,1 +1,1 @@
-python ./resnet_login.py
+python %~dp0\resnet_login.py
