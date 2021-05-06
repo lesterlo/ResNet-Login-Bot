@@ -1,10 +1,15 @@
 # CUHK ResNet Login Bot
 
-## Introuduction
-This python script provides a simple login procedure to login the CUHK ResNet portal. The login daemon can check the connection status and login the Resnet portal with your account automatically. 
+## Introduction
+This python script keeps the CUHK ResNet or WiFi connection persistently. By default, the CUHK ResNet/WiFi has 8 hours timeout on each session. This login Bot can check the network connection status and re-login the CUHK ResNet/WiFi automatically after the 8 hours timeout.
+
+No network service interruption in your hostel room anymore. :)
+
+If you have Home Assistant on Raspberry Pi, please use the [CUHK ResNet Login Service in Home Assistant}(https://github.com/lesterlo/ResNet-Login-hass).
+
 
 ## Usage
-For one time login.
+For one-time login.
 
 First, modify your username and password on login_config.py
 
@@ -18,7 +23,7 @@ python3 resnet_login.py
 
 For keeping the network alive.
 
-You can install a systemd daemon named resnet_login.service to your system. The daemon will check the login status for every 30 min by default. You can change the checking frequency on login_freq=30 on login_config.py
+You can install a systemd daemon named resnet_login.service to your system. The daemon will check the login status every 30 min by default. You can change the checking frequency on login_freq=30 on login_config.py
 
 
 ```bash
