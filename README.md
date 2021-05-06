@@ -5,7 +5,7 @@ This python script keeps the CUHK ResNet or WiFi connection persistently. By def
 
 No network service interruption in your hostel room anymore. :)
 
-If you have Home Assistant on Raspberry Pi, please use the [CUHK ResNet Login Service in Home Assistant}(https://github.com/lesterlo/ResNet-Login-hass).
+If you have Home Assistant on Raspberry Pi, please use the [CUHK ResNet Login Service in Home Assistant](https://github.com/lesterlo/ResNet-Login-hass).
 
 
 ## Usage
